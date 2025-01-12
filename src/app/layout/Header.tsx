@@ -1,13 +1,17 @@
 import Navbar from "@/components/navgation/Navbar";
 import { Button } from "@/components/ui/button";
+import { useScrollSpy } from "@/components/navgation/ScrollSpy";
 import Link from "next/link";
 
 export default function Header() {
+    const sectionIds = ["contact"];
+    const activeSection = useScrollSpy(sectionIds);
+
     return (
-        <header className="fixed w-screen h-[var(--navbar-height)] flex flex-row items-center bg-slate-900 py-5 xl:py10">
-            <div className="container mx-auto flex justify-around lg:justify-around">
-                <Link href="/">
-                    <h1 className="text-3xl font-semibold">Victor
+        <header className="fixed top-0 left-0 w-screen md:h-[var(--navbar-height)] flex flex-row justify-items-center bg-slate-900 pl-1 pr-3 py-3 xl:py10 2xl:py-16">
+            <div className="container mx-auto flex justify-around lg:justify-between">
+                <Link href="/" className="flex items-center">
+                    <h1 className="text-base md:text-2xl lg:text-3xl 2xl:text-4xl font-semibold xl:font-bold 2xl:font-extrabold">Victor
                         <span className="text-purple-500"> DSG</span>
                     </h1>
                 </Link>
@@ -16,12 +20,18 @@ export default function Header() {
                     <Navbar />
                 </div>
                 <div className="hidden lg:flex items-center">
-                    <Link href="#contact">
-                        <Button variant="outline">Contact</Button>
-                    </Link>
+                    {sectionIds.map((id) => (
+
+                        <Link key={id} href="#contact">
+                            <Button
+                            variant="contact"
+                            className={activeSection === id ? "transition ease-in-out delay-50 text-violet-500 hover:scale-110 duration-300 border-b-2 border-violet-600" : "transition hover:scale-110 duration-300"}
+                            >Contact</Button>
+                        </Link>
+                    ))}
                 </div>
 
-                <div className="lg:hidden">moba</div>
+                <div className="lg:hidden flex items-center">moba</div>
             </div>
         </header>
     );
