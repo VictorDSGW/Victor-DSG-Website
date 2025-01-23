@@ -42,23 +42,25 @@ export const About = () => {
         >
           <Button
             variant="vdsg"
-            className="lg:skew-x-45 lg:translate-x-4 xl:skew-x-45 xl:translate-x-8"
+            size="vdsg"
+            className="lg:skew-x-45 lg:translate-x-8 xl:translate-x-10 2xl:translate-x-"
           >
             <FaGithub
-            className="w-5 h-5 lg:-translate-x-4 lg:-skew-x-45 xl:-translate-x-8 xl:-skew-x-45"
+            className="lg:-translate-x-5 lg:-skew-x-45 xl:-translate-x-8 2xl:translate-x-"
             />
           </Button>
         </a>
         <a
          href="https://www.linkedin.com/in/victor-dsg-w"
-         className="bg-primarys lg:translate-x-5 lg:-skew-x-45 xl:translate-x-10 xl:-skew-x-45"
+         className="bg-primarys lg:translate-x-10 lg:-skew-x-45 xl:translate-x-12 2xl:translate-x-16"
         >
           <Button
             variant="vdsg"
-            className="lg:-translate-x-20 lg:skew-x-64"
+            size="vdsg"
+            className="lg:-translate-x-20 lg:skew-x-64 xl:-translate-x-24 2xl:-translate-x-28"
           >
             <FaLinkedin
-            className="w-5 h-5 lg:translate-x-9 lg:-skew-x-45 xl:translate-x-9 xl:-skew-x-45"
+            className="lg:translate-x-9 lg:-skew-x-45 xl:translate-x-12 2xl:translate-x-16"
             />
           </Button>
         </a>
@@ -68,10 +70,11 @@ export const About = () => {
         >
           <Button
             variant="vdsg"
-            className="lg:-skew-x-45 lg:-translate-x-8 xl:-skew-x-45 xl:-translate-x-8"
+            size="vdsg"
+            className="lg:-skew-x-45 lg:-translate-x-8 xl:-translate-x-10 2xl:-translate-x-12"
           >
             <IoIosMail
-            className="w-5 h-5 lg:translate-x-8 lg:skew-x-45 xl:translate-x-8 xl:skew-x-45"
+            className="lg:translate-x-5 lg:skew-x-45 xl:translate-x-8 2xl:translate-x-10"
             />
           </Button>
         </a>

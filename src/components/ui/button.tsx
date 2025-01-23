@@ -18,7 +18,7 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        vdsg: "bg-primary text-primary-foreground rounded-none py-6 px-32 lg:py-8 lg:px-32 font-semibold text-md xl:text-base xl:font-bold 2xl:text-2xl 2xl:font-bold 2xl:p-8",
+        vdsg: "bg-primary text-primary-foreground rounded-none font-semibold text-md xl:text-base xl:font-bold 2xl:text-2xl 2xl:font-bold 2xl:p-8",
         contact: "bg-primary border text-white font-semibold text-md xl:text-base xl:font-bold 2xl:text-2xl 2xl:font-bold 2xl:p-8"
       },
       size: {
@@ -26,6 +26,7 @@ const buttonVariants = cva(
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
+        vdsg: "w-5 h-5 xl:w-10 xl:h-10 2xl:w-20 2xl:h-20 py-6 px-32 lg:py-5 lg:px-20 xl:py-8 xl:px-28 2xl:py-10 2xl:px-36"
       },
     },
     defaultVariants: {
