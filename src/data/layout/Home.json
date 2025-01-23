@@ -1,0 +1,13 @@
+{
+    "home": {
+        "title": {
+            "V" :"Victor",
+            "DSG": "DSG",
+            "img": "/"
+        },
+        "more": {
+            "1": ["", "!, Eu sou "],
+            "2": [" Mundo!", "", "Desenvolvedor FullStack"]
+        }
+    }
+}

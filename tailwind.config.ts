@@ -73,7 +73,11 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		}
   	},
-
+	skew: {
+		'45': '45deg',
+		'64': '64deg',
+		'90': '90deg'
+	}
   },
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("tailwindcss-animate")],
