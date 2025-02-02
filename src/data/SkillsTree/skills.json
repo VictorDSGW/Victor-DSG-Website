@@ -1,0 +1,58 @@
+{
+    "VDSG": {
+        "name": "Victor DSG",
+        "position": "",
+        "icon": "",
+        "softSkills": {}
+    },
+    "abilities": {
+
+        "FullStack": [
+            {
+                "id": 1,
+                "position": "1 / 1 / span 2 / span 2", 
+                "icon": "/SkillsIcons/Front-End/icons8-html.svg", 
+                "name": "HTML", 
+                "hoverCard": {
+                    "title": "Lorem",
+                    "content": "Lorem ipsum",
+                    "footer": "Links..."
+                }
+            },
+            {
+                "id": 2,
+                "position": "1 / 3 / span 1 / span 1", 
+                "icon": "/SkillsIcons/Front-End/icons8-css.svg", 
+                "name": "CSS", 
+                "hoverCard": {
+                    "title": "Lorem",
+                    "content": "Lorem ipsum",
+                    "footer": "Links..."
+                }
+            },
+            {
+                "id": 3,
+                "position": "1 | 2 / span1 / span 1", 
+                "icon": "/SkillsIcons/Front-End/icons8-javascript.svg", 
+                "name": "JavaScript", 
+                "hoverCard": {
+                    "title": "Lorem",
+                    "content": "Lorem ipsum",
+                    "footer": "Links..."
+                }
+            },          
+            {
+                "id": 4,
+                "position": "1 | 2 / span1 / span 1", 
+                "icon": "/SkillsIcons/Front-End/icons8-typescript.svg", 
+                "name": "TypeScript", 
+                "hoverCard": {
+                    "title": "Lorem",
+                    "content": "Lorem ipsum",
+                    "footer": "Links..."
+                }
+            }            
+        ]
+
+    }
+}
