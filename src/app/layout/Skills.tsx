@@ -1,4 +1,4 @@
-import SkillAvatar from "@/components/SkillAvatar";
+import SkillAvatar from "@/components/ui/SkillAvatar";
 import { skillsData } from "@/data/SkillsTree/skillsData";
 
 export const Skills = () => {

@@ -1,7 +1,7 @@
 import { useScrollSpy } from "./ScrollSpy";
 
 export default function Navbar() {
-    const sectionIds = ["home", "about", "skills", "projects", "certificates"];
+    const sectionIds = ["home", "about", "skills", "projects", "achievements"];
     const activeSection = useScrollSpy(sectionIds);
 
     return (
