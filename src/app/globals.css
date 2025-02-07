@@ -82,6 +82,11 @@ section {
   justify-content: center;
 }
 
+input {
+  font-family: var(--font-typeWriter);
+  color: white;
+}
+
 
 /* @layer base {
   * {
