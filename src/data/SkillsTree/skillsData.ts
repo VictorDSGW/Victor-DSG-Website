@@ -5,10 +5,18 @@ export interface Skill {
     position: string;
     icon: string;
     name: string;
-    hoverCard: {
-        title: string;
-        content: string;
-        footer: string;
+    card: {
+        header: {
+            title: string;
+            description?: string;
+        }
+        content: {
+            text: string;
+        }
+        footer: {
+            progress?: number | null;
+            link?: string;
+        }
     };
 }
 

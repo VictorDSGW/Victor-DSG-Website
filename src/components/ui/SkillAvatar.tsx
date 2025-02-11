@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter } from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
 import * as HoverCardPrimitive from "@radix-ui/react-hover-card";
 
 interface SkillAvatarProps {
@@ -9,14 +11,22 @@ interface SkillAvatarProps {
     position?: string;
     icon: string;
     name: string;
-    hoverCard: {
-        title: string;
-        content: string;
-        footer: string;
+    card: {
+        header: {
+            title: string;
+            description?: string;
+        }
+        content: {
+            text: string;
+        }
+        footer: {
+            progress?: number | null;
+            link?: string;
+        }
     };
 }
 
-const SkillAvatar: React.FC<SkillAvatarProps> = ({position, icon, name, hoverCard}) => {
+const SkillAvatar: React.FC<SkillAvatarProps> = ({position, icon, name, card}) => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
@@ -38,11 +48,18 @@ const SkillAvatar: React.FC<SkillAvatarProps> = ({position, icon, name, hoverCar
               </button>
             </PopoverTrigger>
             <PopoverContent className="bg-white p-4 rounded-lg shadow-md">
-              <div>
-                <h3>{hoverCard.title}</h3>
-                <p>{hoverCard.content}</p>
-                <footer>{hoverCard.footer}</footer>
-              </div>
+                <Card>
+                    <CardHeader>
+                        <CardTitle>{card.header.title}</CardTitle>
+                        <CardDescription>{card.header.description}</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                        {card.content.text}
+                    </CardContent>
+                    <CardFooter>
+                        <Progress value={card.footer.progress} />
+                    </CardFooter>
+                </Card>
             </PopoverContent>
           </Popover>
         );
@@ -66,13 +83,16 @@ const SkillAvatar: React.FC<SkillAvatarProps> = ({position, icon, name, hoverCar
                         </Avatar>
                     </HoverCardTrigger>
                     <HoverCardContent>
-                        <div>
-                            <h3
-                                className="text-xl"
-                            >{hoverCard.title}</h3>
-                            <p>{hoverCard.content}</p>
-                            <footer>{hoverCard.footer}</footer>
-                        </div>
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>{card.header.title}</CardTitle>
+                                <CardDescription>{card.header.description}</CardDescription>
+                            </CardHeader>
+                            <CardContent>{card.content.text}</CardContent>
+                            <CardFooter>
+                                <Progress value={card.footer.progress} />
+                            </CardFooter>
+                        </Card>
                         <HoverCardPrimitive.Arrow className="fill-white border border-none" />
                     </HoverCardContent>
                 </HoverCardPrimitive.Root>

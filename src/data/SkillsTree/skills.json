@@ -13,10 +13,18 @@
                 "position": "1 / 1 / span 2 / span 2", 
                 "icon": "/SkillsIcons/Front-End/icons8-html.svg", 
                 "name": "HTML", 
-                "hoverCard": {
-                    "title": "Lorem",
-                    "content": "Lorem ipsum",
-                    "footer": "Links..."
+                "card": {
+                    "header": {
+                        "title": "Lorem",
+                        "description": ""
+                    },
+                    "content": {
+                        "text": "Lorem ipsum"
+                    },
+                    "footer": {
+                        "progress": null,
+                        "Link": ""
+                    }
                 }
             },
             {
@@ -24,10 +32,18 @@
                 "position": "1 / 3 / span 1 / span 1", 
                 "icon": "/SkillsIcons/Front-End/icons8-css.svg", 
                 "name": "CSS", 
-                "hoverCard": {
-                    "title": "Lorem",
-                    "content": "Lorem ipsum",
-                    "footer": "Links..."
+                "card": {
+                    "header": {
+                        "title": "Lorem",
+                        "description": ""
+                    },
+                    "content": {
+                        "text": "Lorem ipsum"
+                    },
+                    "footer": {
+                        "progress": 0,
+                        "Link": ""
+                    }
                 }
             },
             {
@@ -35,10 +51,18 @@
                 "position": "1 | 2 / span1 / span 1", 
                 "icon": "/SkillsIcons/Front-End/icons8-javascript.svg", 
                 "name": "JavaScript", 
-                "hoverCard": {
-                    "title": "Lorem",
-                    "content": "Lorem ipsum",
-                    "footer": "Links..."
+                "card": {
+                    "header": {
+                        "title": "Lorem",
+                        "description": ""
+                    },
+                    "content": {
+                        "text": "Lorem ipsum"
+                    },
+                    "footer": {
+                        "progress": 0,
+                        "Link": ""
+                    }
                 }
             },          
             {
@@ -46,10 +70,18 @@
                 "position": "1 | 2 / span1 / span 1", 
                 "icon": "/SkillsIcons/Front-End/icons8-typescript.svg", 
                 "name": "TypeScript", 
-                "hoverCard": {
-                    "title": "Lorem",
-                    "content": "Lorem ipsum",
-                    "footer": "Links..."
+                "card": {
+                    "header": {
+                        "title": "Lorem",
+                        "description": ""
+                    },
+                    "content": {
+                        "text": "Lorem ipsum"
+                    },
+                    "footer": {
+                        "progress": 0,
+                        "Link": ""
+                    }
                 }
             }            
         ]

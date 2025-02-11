@@ -19,7 +19,7 @@ export const Skills = () => {
                 position={skill.position}
                 icon={skill.icon}
                 name={skill.name}
-                hoverCard={skill.hoverCard}
+                card={skill.card}
               />
             ))}
           </div>
