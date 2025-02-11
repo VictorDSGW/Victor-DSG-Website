@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Courier_Prime, Jura } from 'next/font/google'
 import "@/app/globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 const jura = Jura({
   subsets: ['latin'],
@@ -44,7 +45,8 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className={jura.className || typeWriter.className}>
       <body>
-        {children}
+        <main>{children}</main>
+        <Toaster position="top-center" />
       </body>
     </html>
   )

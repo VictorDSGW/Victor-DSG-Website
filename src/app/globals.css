@@ -82,7 +82,7 @@ section {
   justify-content: center;
 }
 
-input {
+input, textarea {
   font-family: var(--font-typeWriter);
   color: white;
 }
