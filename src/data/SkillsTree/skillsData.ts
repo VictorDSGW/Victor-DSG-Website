@@ -1,8 +1,8 @@
 import { abilities } from "./skills.json";
 
 export interface Skill {
-    id: number;
-    position: string;
+    id: string;
+    position: { x: number, y: number };
     icon: string;
     name: string;
     card: {
@@ -17,7 +17,12 @@ export interface Skill {
             progress?: number | null;
             link?: string;
         }
-    };
+    },
+    lines: {
+        from: string;
+        to: string;
+        styles: string;
+    }
 }
 
 export const skillsData: Skill[] = abilities.FullStack;
@@ -29,4 +34,29 @@ export const skillsData: Skill[] = abilities.FullStack;
 //     "icon": "/SkillsIcons/", 
 //     "name": "Lorem", 
 //     "tooltip": "Lorem ipsum"
+// },
+
+// {
+//     id: "E1",
+//     posiion: { x: 30,y: 360 }, 
+//     icon: "/SkillsIcons/Front-End/icons8-html.svg", 
+//     name: "HTML", 
+//     card: {
+//         header: {
+//             title: "Lorem",
+//             description: ""
+//         },
+//         content: {
+//             text: "Lorem ipsum"
+//         },
+//         footer: {
+//             progress: null,
+//             Link: ""
+//         }
+//     },
+//     lines: {
+//         from: "",
+//         to: "",
+//         styles: ""
+//     }
 // },

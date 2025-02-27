@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/skillsTree/OverviewFlow.jsx", "src/components/skillsTree/nodes/SkillNode.jsx", "src/components/skillsTree/SkillAvatar.tsx"],
   "exclude": ["node_modules"]
 }

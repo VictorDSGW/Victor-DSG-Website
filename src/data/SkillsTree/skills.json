@@ -9,8 +9,8 @@
 
         "FullStack": [
             {
-                "id": 1,
-                "position": "1 / 1 / span 2 / span 2", 
+                "id": "E1",
+                "position": { "x": 30,"y": 360 }, 
                 "icon": "/SkillsIcons/Front-End/icons8-html.svg", 
                 "name": "HTML", 
                 "card": {
@@ -25,11 +25,16 @@
                         "progress": null,
                         "Link": ""
                     }
+                },
+                "lines": {
+                    "from": "",
+                    "to": "",
+                    "styles": ""
                 }
             },
             {
-                "id": 2,
-                "position": "1 / 3 / span 1 / span 1", 
+                "id": "E2",
+                "position": { "x": 100,"y": 50 }, 
                 "icon": "/SkillsIcons/Front-End/icons8-css.svg", 
                 "name": "CSS", 
                 "card": {
@@ -44,11 +49,16 @@
                         "progress": 0,
                         "Link": ""
                     }
+                },
+                "lines": {
+                    "from": "",
+                    "to": "",
+                    "styles": ""
                 }
             },
             {
-                "id": 3,
-                "position": "1 | 2 / span1 / span 1", 
+                "id": "3",
+                "position": { "x": 0,"y": 0 }, 
                 "icon": "/SkillsIcons/Front-End/icons8-javascript.svg", 
                 "name": "JavaScript", 
                 "card": {
@@ -63,11 +73,16 @@
                         "progress": 0,
                         "Link": ""
                     }
+                },
+                "lines": {
+                    "from": "",
+                    "to": "",
+                    "styles": ""
                 }
             },          
             {
-                "id": 4,
-                "position": "1 | 2 / span1 / span 1", 
+                "id": "4",
+                "position": { "x": 12,"y": 23 }, 
                 "icon": "/SkillsIcons/Front-End/icons8-typescript.svg", 
                 "name": "TypeScript", 
                 "card": {
@@ -82,6 +97,11 @@
                         "progress": 0,
                         "Link": ""
                     }
+                },
+                "lines": {
+                    "from": "",
+                    "to": "",
+                    "styles": ""
                 }
             }            
         ]
