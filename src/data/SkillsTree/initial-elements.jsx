@@ -75,30 +75,30 @@ export const nodes = [
     },
     position: { x: 0, y: -200 }
   },
-  {
-    id: '3',
-    type: 'avatar',
-    selectable: true,
-    data: {
-      id: '0',
-      icon: '/SkillsIcons/Front-End/icons8-html.svg',
-      name: 'Game Dev',
-      card: {
-        header: {
-          title: "Game Developer",
-          description: "..."
-        },
-        content: {
-          text: "Lorem ipsum"
-        },
-        footer: {
-          progress: null,
-          Link: "https"
-        }
-      }
-    },
-    position: { x: 200, y: 0 }
-  },
+  // {
+  //   id: '3',
+  //   type: 'avatar',
+  //   selectable: true,
+  //   data: {
+  //     id: '0',
+  //     icon: '/SkillsIcons/Front-End/icons8-html.svg',
+  //     name: 'Game Dev',
+  //     card: {
+  //       header: {
+  //         title: "Game Developer",
+  //         description: "..."
+  //       },
+  //       content: {
+  //         text: "Lorem ipsum"
+  //       },
+  //       footer: {
+  //         progress: null,
+  //         Link: "https"
+  //       }
+  //     }
+  //   },
+  //   position: { x: 200, y: 0 }
+  // },
   // {
   //   id: 'group-1',
   //   type: 'group',

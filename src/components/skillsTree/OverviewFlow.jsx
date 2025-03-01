@@ -28,6 +28,8 @@ const edgeTypes = {
 };
  
 const nodeClassName = (node) => node.type;
+
+const proOptions = { hideAttribution: true };
  
 const OverviewFlow = () => {
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
@@ -46,10 +48,10 @@ const OverviewFlow = () => {
         onEdgesChange={onEdgesChange}
         onConnect={onConnect}
         fitView
-        attributionPosition="top-right"
+        proOptions={proOptions}
         nodeTypes={nodeTypes}
         edgeTypes={edgeTypes}
-        style={{ backgroundColor: "#F7F9FB" }}
+        // style={{ backgroundColor: "#F7F9FB" }}
         elementsSelectable={false}
         nodesDraggable={false}
         edgesReconnectable={false}
@@ -61,7 +63,7 @@ const OverviewFlow = () => {
       >
         {/* <MiniMap zoomable pannable nodeClassName={nodeClassName} />
         <Controls /> */}
-      <Background  /> 
+      {/* <Background  />  */}
       </ReactFlow>
     </ReactFlowProvider>
   );

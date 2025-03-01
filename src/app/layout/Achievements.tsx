@@ -12,19 +12,26 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { GiAchievement } from "react-icons/gi";
+
 type CardProps = React.ComponentProps<typeof Card>
 
 export const Achievements = ({ className, ...props }: CardProps) => {
   return (
     <section id="achievements" className="flex-col items-center">    
-      <div>
-        <h2>Achievements</h2>
+      <div >
+        <h2>
+          <GiAchievement
+            className="-translate-x-5 translate-y-6"
+          />
+          Conquistas
+        </h2>
       </div>
-      <div className="gap-3 m-3 flex justify-center flex-wrap bevel">
+      <div className="gap-3 m-1 flex justify-center flex-wrap bevel">
         {achievementsData.map((achievement, index) => (
           <Card
             key={index}
-            className={cn("w-[300px] h-[400px] md:w-[360px] md:h-[460px] lg:w-[400px] lg:h-[500px] flex flex-col justify-between", className)}
+            className={cn("w-[300px] h-[400px] md:w-[360px] md:h-[460px] lg:w-[400px] lg:h-[500px] xl:w-[440px] Xl:h-[580px] flex flex-col justify-between", className)}
             {...props}
           >
             <CardHeader>
