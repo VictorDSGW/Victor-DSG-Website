@@ -10,13 +10,14 @@ export default {
   theme: {
   	extend: {
   		colors: {
-			primarys: "#800080",
+			primarys: "#000", // 800080
 			// accent: {
 			// 	DEFAULT: "#00ff99",
 			// 	hover: "#00e187"
 			// },
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
+			text: 'hsl(var(--text-color))',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'

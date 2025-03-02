@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
-import { Courier_Prime, Jura } from 'next/font/google'
+import {
+  // Courier_Prime,
+  Jura
+} from 'next/font/google'
 import "@/app/globals.css";
+import { ThemeProvider } from 'next-themes';
 import { Toaster } from "@/components/ui/sonner";
 
 const jura = Jura({
@@ -9,11 +13,11 @@ const jura = Jura({
   variable: '--font-jura'
 })
 
-const typeWriter = Courier_Prime({
-  subsets: ['latin'],
-  weight: ["400", "700"],
-  variable: '--font-typeWriter'
-})
+// const typeWriter = Courier_Prime({
+//   subsets: ['latin'],
+//   weight: ["400", "700"],
+//   variable: '--font-typeWriter'
+// })
 
 
 export const metadata: Metadata = {
@@ -43,10 +47,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br" className={jura.className || typeWriter.className}>
-      <body>
-        <main>{children}</main>
-        <Toaster position="top-center" />
+    <html lang="pt-br" className={jura.className} suppressHydrationWarning>
+      <body className="">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <main>{children}</main>
+          <Toaster position="bottom-right" />
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -5,6 +5,7 @@ import Link from "next/link";
 import MobileMenu from "@/components/navgation/MobileMenu";
 import { useState } from "react";
 import Hamburger from "hamburger-react";
+import { ThemeToggle } from "@/components/navgation/ThemeToggle";
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ export default function Header() {
     const activeSection = useScrollSpy(sectionIds);
 
     return (
-        <header className="fixed top-0 left-0 w-screen md:h-[var(--navbar-height)] flex flex-row bg-slate-900 pl-1 pr-3 py-3 z-50 xl:py10 2xl:py-16">
+        <header className="fixed top-0 left-0 w-screen md:h-[var(--navbar-height)] flex flex-row bg-[hsl(var(--secondary))] pl-1 pr-3 py-3 z-50 xl:py10 2xl:py-16">
             <div className="container mx-auto flex justify-between lg:justify-between">
                 <Link href="/" className="flex items-center">
                     <h1 className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-semibold xl:font-bold 2xl:font-extrabold">Victor
@@ -24,9 +25,15 @@ export default function Header() {
                 <div className="hidden lg:flex items-center">
                     <Navbar />
                 </div>
+
+                <div
+                    className="absolute left-2/4 lg:left-[80%] 2xl:left-[90%] translate-y-2 2xl:-translate-y-5"
+                >
+                    <ThemeToggle />
+                </div>
+
                 <div className="hidden lg:flex items-center">
                     {sectionIds.map((id) => (
-
                         <Link key={id} href="#contact">
                             <Button
                             variant="contact"

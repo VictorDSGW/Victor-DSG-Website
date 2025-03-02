@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel } from "@/components/ui/form";
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea";
-import { Toaster, toast } from "sonner";
+import { toast } from "sonner";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -17,8 +17,6 @@ const formSchema = z.object({
 });
 
 export default function ContactForm() {
-  <Toaster position="bottom-right"/>
-
   // const promise = () => new Promise((resolve) => setTimeout(() => resolve({ name: 'Sonner' }), 2000));
 
   const [isSubmitting, setIsSubmitting] = useState(false);

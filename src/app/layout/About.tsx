@@ -41,7 +41,7 @@ export const About = () => {
         >
           <a
           href="https://github.com/VictorDSGW"
-          className="bg-primarys lg:hover:scale-110 lg:transition-transform"
+          className="bg-primary lg:hover:scale-110 lg:transition-transform"
           >
             <Button
               variant="vdsg"
@@ -55,7 +55,7 @@ export const About = () => {
           </a>
           <a
           href="https://www.linkedin.com/in/victor-dsg-w"
-          className="bg-primarys lg:translate-x-10 lg:-skew-x-45 xl:translate-x-12 2xl:translate-x-16 lg:hover:scale-110 lg:transition-transform"
+          className="bg-primary lg:translate-x-10 lg:-skew-x-45 xl:translate-x-12 2xl:translate-x-16 lg:hover:scale-110 lg:transition-transform"
           >
             <Button
               variant="vdsg"
@@ -69,7 +69,7 @@ export const About = () => {
           </a>
           <a
           href="mailto:victor.dsgw@gmail.com"
-          className="bg-primarys lg:hover:scale-110 lg:transition-transform"
+          className="bg-primary lg:hover:scale-110 lg:transition-transform"
           >
             <Button
               variant="vdsg"

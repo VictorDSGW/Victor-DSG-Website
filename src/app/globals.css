@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  /* scroll-snap-type: y mandatory; */
 }
 
 /* body {
@@ -19,8 +20,9 @@ html {
 
 @layer base {
   :root {
-    --background: 300 50% 0%;
+    --background: 60 33% 91%;
     --foreground: 0 0% 3.9%;
+    /* --text-color: 300 100% 25%; */
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
@@ -47,13 +49,14 @@ html {
     --navbar-height: 5rem;
   }
   .dark {
-    --background: 300 100% 25%;
+    --background: 360 0% 5%;
     --foreground: 0 0% 98%;
+    /* --text-color: 60 33% 91%; */
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
+    --primary: 300 100% 25%; /*0 0% 98%;*/
     --primary-foreground: 0 0% 9%;
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
@@ -80,6 +83,13 @@ section#home, section#about, section#skills, section#projects, section#contact, 
   display: flex;
   align-items: top;
   justify-content: center;
+  /* scroll-snap-align: start; */
+  /* scroll-snap-stop: always; */
+}
+
+/* Não funcionou */
+main {
+  color:hsl(var(--foreground));
 }
 
 input, textarea {
