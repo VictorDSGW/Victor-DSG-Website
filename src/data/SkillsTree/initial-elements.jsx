@@ -9,7 +9,7 @@ export const nodes = [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Front-End/icons8-html.svg',
+      icon: '/SkillsIcons/Front-End/icons8-javascript.svg',
       name: 'VDSG',
       card: {
         header: {
@@ -34,7 +34,7 @@ export const nodes = [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Front-End/icons8-html.svg',
+      icon: '',
       name: 'Web Developer',
       card: {
         header: {
@@ -142,7 +142,7 @@ export const nodes = [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Front-End/icons8-html.svg',
+      icon: '/SkillsIcons/Front-End/icons8-javascript.svg',
       name: 'HTML',
       card: {
         header: {
@@ -199,7 +199,7 @@ export const nodes = [
           description: "..."
         },
         content: {
-          text: "Lorem ipsum"
+          text: "W.3"
         },
         footer: {
           progress: null,
@@ -208,6 +208,78 @@ export const nodes = [
       }
     },
     position: { x: -500, y: 500 }
+  },
+  {
+    id: 'W.4',
+    type: 'avatar',
+    selectable: true,
+    data: {
+      id: '0',
+      icon: '/SkillsIcons/Front-End/icons8-javascript.svg',
+      name: 'JS',
+      card: {
+        header: {
+          title: "JavaScript",
+          description: "..."
+        },
+        content: {
+          text: "W.4"
+        },
+        footer: {
+          progress: null,
+          Link: "https"
+        }
+      }
+    },
+    position: { x: 0, y: 500 }
+  },
+  {
+    id: 'W.5',
+    type: 'avatar',
+    selectable: true,
+    data: {
+      id: '0',
+      icon: '/SkillsIcons/Front-End/icons8-javascript.svg',
+      name: '0',
+      card: {
+        header: {
+          title: "0",
+          description: "..."
+        },
+        content: {
+          text: "W.5"
+        },
+        footer: {
+          progress: null,
+          Link: "https"
+        }
+      }
+    },
+    position: { x: -250, y: 250 }
+  },
+  {
+    id: 'W.6',
+    type: 'avatar',
+    selectable: true,
+    data: {
+      id: '0',
+      icon: '/SkillsIcons/Front-End/icons8-javascript.svg',
+      name: 'JS',
+      card: {
+        header: {
+          title: "JavaScript",
+          description: "..."
+        },
+        content: {
+          text: "W.6"
+        },
+        footer: {
+          progress: null,
+          Link: "https"
+        }
+      }
+    },
+    position: { x: -250, y: 500 }
   },
 ];
 
@@ -235,12 +307,40 @@ export const edges = [
     sourceHandle: 'W',
     targetHandle: 'E'
   },
+  // {
+  //   id: 'W-W.2',
+  //   source: 'W',
+  //   target: 'W.2',
+  //   sourceHandle: 'SW',
+  //   targetHandle: 'E'
+  // },
   {
-    id: 'W-W.3',
-    source: 'W',
+    id: 'W-W.5',
+    source: 'W.5',
+    target: 'V',
+    sourceHandle: 'NE',
+    targetHandle: 'SW'
+  },
+  {
+    id: 'ii',
+    source: 'W.5',
+    target: 'W.1',
+    sourceHandle: 'NW',
+    targetHandle: 'SE'
+  },
+  {
+    id: 'iii',
+    source: 'W.5',
     target: 'W.3',
-    sourceHandle: 'S',
-    targetHandle: 'E'
+    sourceHandle: 'SW',
+    targetHandle: 'NE'
+  },
+  {
+    id: 'iiii',
+    source: 'W.5',
+    target: 'W.4',
+    sourceHandle: 'SE',
+    targetHandle: 'NW'
   },
   //----------------------------------------------------------------------------------------------------//
   // {

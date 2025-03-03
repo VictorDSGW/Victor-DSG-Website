@@ -32,6 +32,8 @@ const SkillNode = ({ data }) => {
         card={data.card}
       />
 
+      {/* Pontos Cardeais */}
+
       <Handle
         id="N"
         type="source"
@@ -81,6 +83,60 @@ const SkillNode = ({ data }) => {
         position={Position.Right}
         style={{ background: "#000", width: 5, height: 5 }}
       />
+
+      {/* Pontos Colaterais */}
+
+      <Handle
+        id="SW"
+        type="source"
+        position={Position.Right}
+        style={{ position: 'absolute', transform: 'translate(-800%, -400%)', background: '#555' }}
+      />
+      <Handle
+        id="SW"
+        type="target"
+        position={Position.Right}
+        style={{ position: 'absolute', transform: 'translate(-800%, -400%)', background: '#555' }}
+      />
+      
+      <Handle
+        id="SE"
+        type="source"
+        position={Position.Left}
+        style={{ position: 'absolute', transform: 'translate(800%, -400%)', background: '#555' }}
+      />
+      <Handle
+        id="SE"
+        type="target"
+        position={Position.Left}
+        style={{ position: 'absolute', transform: 'translate(800%, -400%)', background: '#555' }}
+      />
+
+      <Handle
+        id="NW"
+        type="source"
+        position={Position.Right}
+        style={{ position: 'absolute', transform: 'translate(-800%, 300%)', background: '#555' }}
+      />
+      <Handle
+        id="NW"
+        type="target"
+        position={Position.Right}
+        style={{ position: 'absolute', transform: 'translate(-800%, 300%)', background: '#555' }}
+      />
+      <Handle
+        id="NE"
+        type="source"
+        position={Position.Left}
+        style={{ position: 'absolute', transform: 'translate(800%, 300%)', background: '#555' }}
+      />
+      <Handle
+        id="NE"
+        type="target"
+        position={Position.Left}
+        style={{ position: 'absolute', transform: 'translate(800%, 300%)', background: '#555' }}
+      />
+
     </div>
   );
 };
