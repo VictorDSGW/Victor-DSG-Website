@@ -6,7 +6,7 @@ export const Skills = () => {
 
   return (
     <section id="skills" className="static">
-      <div className="border border-blue-600 w-[98%] h-screen">
+      <div className="border border-blue-600 w-[98%] h-[89vh]">
         <OverviewFlow />
       </div>
     </section>

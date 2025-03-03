@@ -33,42 +33,50 @@ const SkillNode = ({ data }) => {
       />
 
       <Handle
+        id="N"
         type="source"
         position={Position.Top}
         style={{ background: "#555", width: 5, height: 5 }}
       />
       <Handle
+        id="S"
         type="source"
         position={Position.Bottom}
         style={{ background: "#555", width: 5, height: 5 }}
       />
       <Handle
+        id="W"
         type="source"
         position={Position.Left}
         style={{ background: "#555", width: 5, height: 5 }}
       />
       <Handle
+        id="E"
         type="source"
         position={Position.Right}
         style={{ background: "#555", width: 5, height: 5 }}
       />
 
       <Handle
+        id="N"
         type="target"
         position={Position.Top}
         style={{ background: "#000", width: 5, height: 5 }}
       />
       <Handle
+        id="S"
         type="target"
         position={Position.Bottom}
         style={{ background: "#000", width: 5, height: 5 }}
       />
       <Handle
+        id="W"
         type="target"
         position={Position.Left}
         style={{ background: "#000", width: 5, height: 5 }}
       />
       <Handle
+        id="E"
         type="target"
         position={Position.Right}
         style={{ background: "#000", width: 5, height: 5 }}

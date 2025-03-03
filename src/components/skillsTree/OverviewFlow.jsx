@@ -18,9 +18,11 @@ import {
 } from '@/data/SkillsTree/initial-elements';
 import ButtonEdge from '@/components/skillsTree/edges/ButtonEdge';
 import SkillNode from "@/components/skillsTree/nodes/SkillNode";
+import AnnotationNode from "@/components/skillsTree/nodes/AnnotationNode";
  
 const nodeTypes = {
   avatar: SkillNode,
+  annotation: AnnotationNode
 };
  
 const edgeTypes = {

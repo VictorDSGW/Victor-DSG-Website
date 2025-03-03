@@ -4,7 +4,7 @@ import { type } from 'os';
 
 export const nodes = [
   {
-    id: '0',
+    id: 'V',
     type: 'avatar',
     selectable: true,
     data: {
@@ -27,8 +27,9 @@ export const nodes = [
     },
     position: { x: 0, y: 0 }
   },
+  //----------------------------------------------------------------------------------------------------//
   {
-    id: '1',
+    id: 'W',
     type: 'avatar',
     selectable: true,
     data: {
@@ -49,10 +50,10 @@ export const nodes = [
         }
       }
     },
-    position: { x: -200, y: 0 }
+    position: { x: -250, y: 0 }
   },
   {
-    id: '2',
+    id: 'S',
     type: 'avatar',
     selectable: true,
     data: {
@@ -73,10 +74,10 @@ export const nodes = [
         }
       }
     },
-    position: { x: 0, y: -200 }
+    position: { x: 0, y: 250 }
   },
   // {
-  //   id: '3',
+  //   id: 'G',
   //   type: 'avatar',
   //   selectable: true,
   //   data: {
@@ -97,18 +98,21 @@ export const nodes = [
   //       }
   //     }
   //   },
-  //   position: { x: 200, y: 0 }
+  //   position: { x: 250, y: 0 }
   // },
+  //----------------------------------------------------------------------------------------------------//
   // {
   //   id: 'group-1',
   //   type: 'group',
   //   position: {
-  //     x: -500,
-  //     y: -500,
+  //     x: -315,
+  //     y: -200,
   //   },
   //   style: {
-  //     width: 390,
-  //     height: 180,
+  //     width: 630,
+  //     height: 630,
+  //     zIndex: -50,
+  //     clipPath: 'polygon(100% 0, 0 0, 100% 100%)'
   //   },
   // },
   // {
@@ -117,50 +121,128 @@ export const nodes = [
   //   draggable: false,
   //   selectable: false,
   //   data: {
-  //     level: 1,
-  //     label:
-  //       '..!',
-  //     arrowStyle: {
-  //       right: 0,
-  //       bottom: 0,
-  //       transform: 'translate(-30px,10px) rotate(-80deg)',
-  //     },
+  //     // level: 1,
+  //     label: 'Olá',
+  //     // arrowStyle: {
+  //     //   right: 0,
+  //     //   bottom: 0,
+  //     //   transform: 'translate(-30px,10px) rotate(-80deg)',
+  //     // },
+  //   },
+  //   style: {
+  //     backgroundColor: 'transparent',
+  //     border: 'none',
   //   },
   //   position: { x: 50, y: 50 },
   // },
-  // {
-  //   id: '2-2',
-  //   data: {},
-  //   type: 'avatar',
-  //   position: { x: 50, y: 50 },
-  //   parentId: '2-1',
-  //   extent: 'parent',
-  // },
-  // {
-  //   id: '2-3',
-  //   type: 'avatar',
-  //   data: {
-  //     label: 'Resize Me',
-  //   },
-  //   position: { x: 250, y: 50 },
-  //   parentId: '2-1',
-  //   extent: 'parent',
-  // },
-  
+  //----------------------------------------------------------------------------------------------------//
+  {
+    id: 'W.1',
+    type: 'avatar',
+    selectable: true,
+    data: {
+      id: '0',
+      icon: '/SkillsIcons/Front-End/icons8-html.svg',
+      name: 'HTML',
+      card: {
+        header: {
+          title: "HTML",
+          description: "HyperText Markup Language"
+        },
+        content: {
+          text: ""
+          // "HTML é a sigla para HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto. É a linguagem padrão para criar páginas da web e é considerada o componente base da internet."
+        },
+        footer: {
+          progress: null,
+          Link: "https"
+        }
+      }
+    },
+    position: { x: -500, y: 0 }
+  },
+  {
+    id: 'W.2',
+    type: 'avatar',
+    selectable: true,
+    data: {
+      id: '0',
+      icon: '/SkillsIcons/Front-End/icons8-css.svg',
+      name: 'CSS',
+      card: {
+        header: {
+          title: "CSS",
+          description: "..."
+        },
+        content: {
+          text: "Lorem ipsum"
+        },
+        footer: {
+          progress: null,
+          Link: "https"
+        }
+      }
+    },
+    position: { x: -500, y: 250 }
+  },
+  {
+    id: 'W.3',
+    type: 'avatar',
+    selectable: true,
+    data: {
+      id: '0',
+      icon: '/SkillsIcons/Front-End/icons8-javascript.svg',
+      name: 'JS',
+      card: {
+        header: {
+          title: "JavaScript",
+          description: "..."
+        },
+        content: {
+          text: "Lorem ipsum"
+        },
+        footer: {
+          progress: null,
+          Link: "https"
+        }
+      }
+    },
+    position: { x: -500, y: 500 }
+  },
 ];
 
 export const edges = [
   {
-    id: '0-1',
-    source: '0',
-    target: '1',
+    id: 'V-W',
+    source: 'V',
+    target: 'W',
+    sourceHandle: 'W',
+    targetHandle: 'E'
   },
   {
-    id: '0-2',
-    source: '0',
-    target: '2',
+    id: 'V-S',
+    source: 'V',
+    target: 'S',
+    sourceHandle: 'S',
+    targetHandle: 'N',
     animated: true
-  }
+  },
+  //----------------------------------------------------------------------------------------------------//
+  {
+    id: 'W-W.1',
+    source: 'W',
+    target: 'W.1',
+    sourceHandle: 'W',
+    targetHandle: 'E'
+  },
+  {
+    id: 'W-W.3',
+    source: 'W',
+    target: 'W.3',
+    sourceHandle: 'S',
+    targetHandle: 'E'
+  },
+  //----------------------------------------------------------------------------------------------------//
   // {
   //   id: 'e1-2',
   //   source: '1-1',

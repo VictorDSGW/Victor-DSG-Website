@@ -74,8 +74,11 @@ const SkillAvatar: React.FC<SkillAvatarProps> = ({id, icon, name, card}) => {
         <div
             id={`${id}`}
             // style={{ gridArea: position }}
-            className="flex justify-center items-center border rounded-full border-double border-teal-500 bg-gray-500 lg:w-12 lg:h-12 xl:w-14 xl:h-14 2xl:w-16
-        2xl:h-16 z-50"
+            // lg:w-12 lg:h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16
+
+            className="flex justify-center items-center border rounded-full border-double border-teal-500 bg-gray-500
+            w-16 h-16
+            z-50"
         >
             <Popover>
             {/* <PopoverPrimitive.Root

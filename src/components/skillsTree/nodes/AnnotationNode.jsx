@@ -4,7 +4,7 @@ function AnnotationNode({ data }) {
   return (
     <>
       <div className='annotation-content'>
-        <div className='annotation-level'>{data.level}.</div>
+        {/* <div className='annotation-level'>{data.level}.</div> */}
         <div>{data.label}</div>
       </div>
       {data.arrowStyle && (
