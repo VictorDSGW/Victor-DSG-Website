@@ -32,7 +32,7 @@
 }
  
 /* Customizing Default Theming */
- 
+
 .react-flow__node {
     box-shadow: var(--xy-node-boxshadow-default);
     border-radius: var(--xy-node-border-radius-default);
