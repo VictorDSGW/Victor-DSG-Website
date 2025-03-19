@@ -12,7 +12,6 @@ const SkillNode = ({ data }) => {
         name={data.name}
         card={data.card}
       />
-
       <Handles />
     </div>
   );

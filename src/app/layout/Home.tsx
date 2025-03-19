@@ -1,8 +1,6 @@
 import { Typewriter } from "react-simple-typewriter";
 
-
 export const Home = () => {
- 
   return (
     <section id="home" className="flex-col gap-20 items-center">
       <div className="sm:mb-9">
@@ -18,7 +16,7 @@ export const Home = () => {
             delaySpeed={2800}
           />
           <Typewriter 
-            words={[" Mundo!", "", "Desenvolvedor FullStack",
+            words={[" Mundo!", "", "Desenvolvedor Web",
               //  "Engenheiro de Software", "Victor DSG!"
               ]}
             typeSpeed={70}

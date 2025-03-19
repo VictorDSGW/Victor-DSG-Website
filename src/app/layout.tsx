@@ -24,22 +24,6 @@ export const metadata: Metadata = {
   title: "Victor DSG Website",
   description: "Victor DSG Portfolio",
 };
-
-// export default function RootLayout({
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode;
-// }>) {
-//   return (
-//     <html lang="en">
-//       <body
-//         className={`${jura.variable} antialiased`}
-//       >
-//         {children}
-//       </body>
-//     </html>
-//   );
-// }
  
 export default function RootLayout({
   children,

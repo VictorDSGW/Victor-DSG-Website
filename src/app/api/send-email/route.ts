@@ -5,7 +5,6 @@ export async function POST(request: Request) {
   try {
     const { name, email, message } = await request.json();
 
-    // Validação básica
     if (!name || !email || !message) {
       return NextResponse.json(
         { message: 'Todos os campos são obrigatórios' },

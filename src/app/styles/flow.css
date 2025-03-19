@@ -78,23 +78,6 @@ input[type='number']::-webkit-inner-spin-button {
   font-size: 24px;
 }
 
-/* Group - ! */
-
-.react-flow__node-group {
-  z-index: 0;
-}
-
-/* Mobile View */
-.mobile-only {
-  display: none;
-}
-
-@media (max-width: 1024) {
-  .mobile-only {
-    display: block;
-  }
-}
-
 /* Toolbar Node */
  
 .react-flow__node-toolbar {
