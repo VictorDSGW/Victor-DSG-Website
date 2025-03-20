@@ -3,6 +3,7 @@
 import { About } from "./layout/About";
 import { Achievements } from "./layout/Achievements";
 import { Contact } from "./layout/Contact";
+import { Footer } from "./layout/Footer";
 import Header from "./layout/Header";
 import { Home } from "./layout/Home";
 import { Projects } from "./layout/Projects";
@@ -19,6 +20,7 @@ export default function Page() {
       <Projects />
       <Achievements />
       <Contact />
+      <Footer />
     </>
   );
 }
