@@ -31,12 +31,12 @@ const SkillAvatar: React.FC<SkillAvatarProps> = ({id, icon, name, card}) => {
     return (
         <div
             id={`${id}`}
-            style={ useMobileView() ? {transform: 'rotate(90deg)'} : {}}
-            className="flex justify-center items-center border rounded-full border-double border-teal-500 bg-gray-500 w-16 h-16 z-50"
+            style={ useMobileView() ? {transform: 'rotate(90deg)'} : {} }
+            className="flex justify-center items-center border-2 border-none rounded-full bg-secondary shadow-[inset_0_0_32px_5px_rgba(0,0,0,0.25)] w-16 h-16 z-50"
         >
             <Popover>
                 <PopoverTrigger>
-                    <Avatar className="w-full h-full">
+                    <Avatar className="w-full h-full -z-50">
                         <AvatarImage src={icon} alt={name} />
                         <AvatarFallback>{typeof name === 'string' && name.length > 0 ? name[0] : 'N/A'}</AvatarFallback>
                     </Avatar>
@@ -54,7 +54,7 @@ const SkillAvatar: React.FC<SkillAvatarProps> = ({id, icon, name, card}) => {
                     </Card>
                     <HoverCardPrimitive.Arrow className="fill-white border border-none" />
                 </PopoverContent>
-        </Popover>
+            </Popover>
         </div>
     )
 }

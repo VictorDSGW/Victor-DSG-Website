@@ -18,7 +18,7 @@ export default function Header() {
     // const pathname = usePathname();
 
     return (
-        <header className="fixed top-0 left-0 w-screen md:h-[var(--navbar-height)] flex flex-row bg-[hsl(var(--secondary))] pl-1 pr-3 py-3 z-50 xl:py10 2xl:py-16">
+        <header className="fixed top-0 left-0 w-screen md:h-[var(--navbar-height)] flex flex-row bg-[hsl(var(--tertiary))] pl-1 pr-3 py-3 z-50 xl:py10 2xl:py-16">
             <div className="container mx-auto flex justify-between lg:justify-between">
                 <Link href="/" className="flex items-center cursor-default">
                     <h1 className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-semibold xl:font-bold 2xl:font-extrabold">Victor
@@ -38,12 +38,12 @@ export default function Header() {
 
                 <div className="hidden lg:flex items-center">
                     {sectionIds.map((id) => (
-                        <Link key={id} href="#contact" onClick={() => scrollToSection(`${id}`)}>
+                        <li key={id} className="list-none" onClick={() => scrollToSection(`${id}`)}>
                             <Button
                             variant="contact"
                             className={activeSection === id ? "transition ease-in-out delay-50 text-violet-500 hover:scale-110 duration-300 border-b-2 border-violet-600" : "transition hover:scale-110 duration-300"}
                             >Contact</Button>
-                        </Link>
+                        </li>
                     ))}
                 </div>
 

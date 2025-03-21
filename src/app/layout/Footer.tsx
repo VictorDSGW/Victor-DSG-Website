@@ -4,7 +4,7 @@ export const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <footer
-        className='w-full bg-[hsl(var(--secondary))] flex flex-row justify-center p-3 2xl:p-10'
+        className='w-full bg-[hsl(var(--tertiary))] flex flex-row justify-center p-3 2xl:p-10'
     >
         <div>
             <h3
