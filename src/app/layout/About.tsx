@@ -8,7 +8,7 @@ export const About = () => {
   return (
     <section id="about">
       <div
-        className="flex flex-col justify-evenly"
+        className="flex flex-col justify-evenly mb-10"
       >
         <div className="px-3 lg:p-5 xl:px-20 2xl:p-20">
           <h1

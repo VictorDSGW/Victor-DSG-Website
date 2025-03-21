@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const useMobileView = (breakpoint = 1024) => {
-    const [useMobileView, setUseMobileView] = useState(() => window.innerWidth <= 768);
+    const [useMobileView, setUseMobileView] = useState(() => window.innerWidth <= 1024);
     
     useEffect(() => {
         const handleResize = () => setUseMobileView(window.innerWidth <= breakpoint);

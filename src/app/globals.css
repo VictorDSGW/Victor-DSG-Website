@@ -77,14 +77,22 @@ html {
   }
 }
 
-section#home, section#about, section#projects, section#contact, section#achievements {
+section#home,
+section#about,
+section#projects,
+section#contact,
+section#achievements {
   min-height: 100vh;
-  padding-top: var(--navbar-height);
   display: flex;
   align-items: top;
   justify-content: center;
   /* scroll-snap-align: start; */
   /* scroll-snap-stop: always; */
+}
+
+section#home,
+section#contact {
+  padding-top: var(--navbar-height);
 }
 
 main {

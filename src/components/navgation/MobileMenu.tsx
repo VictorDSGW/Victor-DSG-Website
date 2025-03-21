@@ -1,5 +1,5 @@
 import React from 'react'
-import { useScrollSpy } from './ScrollSpy';
+import { useScrollSpy } from '@/components/hooks/useScrollSpy';
 
 export default function MobileMenu({
    menuOpen, 
@@ -12,11 +12,11 @@ export default function MobileMenu({
   
   return (
     <div
-     className={`fixed flex flex-col justify-center items-center z-10 top-16 right-0 h-full w-full pb-32 bg-white text-black transition-transform duration-300 transform ${
+     className={`fixed flex flex-col justify-center items-center z-10 top-16 right-0 h-full w-full pb-16 bg-white text-black transition-transform duration-300 transform ${
       menuOpen ? 'translate-x-0' : 'translate-x-full'
       }`}>
           <ul
-           className="flex flex-col gap-7 md:gap-9 w-full justify-center items-center"
+           className="flex flex-col gap-5 md:gap-9 w-full justify-center content-center items-center"
           >
             {sectionIds.map((id, index) => (
                 <li
@@ -28,7 +28,7 @@ export default function MobileMenu({
                      onClick={() => setMenuOpen(false)}
                      className={`
                       flex justify-center items-center bg-violet-500 w-full h-full
-                      ${activeSection === id ? "transition ease-in-out delay-50 text-slate-100 border-b-2 border-b-violet-600" : ""} 
+                      ${activeSection ? "transition ease-in-out delay-50 text-slate-100 border-b-2 border-b-violet-600" : ""} 
                       ${index === 0 ? 'rounded-t-3xl' : index === sectionIds.length -1 ? 'rounded-b-3xl' : '' }`}
                     >
                       {id.charAt(0).toUpperCase() + id.slice(1)}
