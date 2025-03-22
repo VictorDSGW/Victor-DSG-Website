@@ -23,7 +23,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Front-End/icons8-javascript.svg',
+      icon: '/SkillsIcons/Web/icons8-developer.png',
       name: 'VDSG',
       card: {
         header: {
@@ -31,11 +31,11 @@ export const nodes = (isMobile) => [
           description: "Soft Skills"
         },
         content: {
-          text: "Lorem ipsum"
+          text: "No início da minha jornada profissional, destaco a minha adaptabilidade e habilidade para resolver desafios de forma criativa. Comprometido com o aprendizado autodidata, busco constantemente novas soluções para obstáculos, aprimorando minhas competências e transformando cada situação em oportunidade de crescimento. Estou em constante evolução e disposto a superar desafios com determinação."
         },
         footer: {
           progress: null,
-          Link: "https"
+          Link: ""
         }
       }
     },
@@ -53,10 +53,10 @@ export const nodes = (isMobile) => [
       card: {
         header: {
           title: "Web Developer",
-          description: "..."
+          description: "Sites e Aplicativos"
         },
         content: {
-          text: "Lorem ipsum"
+          text: "Na carreira de Desenvolvedor Web, o foco é criar interfaces intuitivas e dinâmicas que engajem o usuário. Utilizo linguagens de programação para dar vida a projetos inovadores. Explore minha skill tree para conhecer minhas competências."
         },
         footer: {
           progress: null,
@@ -72,18 +72,18 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Front-End/icons8-html.svg',
+      icon: '/SkillsIcons/Software/icons8-caixa-de-software-96.png',
       name: 'Software Engineer',
       card: {
         header: {
           title: "Engenharia de Software",
-          description: "..."
+          description: ""
         },
         content: {
-          text: "Lorem ipsum"
+          text: "Engenheiro de Software projeta sistemas robustos e escaláveis, transformando desafios em soluções inteligentes. Com foco em qualidade e inovação, contribuo para o desenvolvimento de tecnologias que fazem a diferença. Cursando bacharelado 1º Semestre."
         },
         footer: {
-          progress: 1,
+          progress: 5,
           Link: "https"
         }
       }
@@ -96,7 +96,7 @@ export const nodes = (isMobile) => [
   //   selectable: true,
   //   data: {
   //     id: '0',
-  //     icon: '/SkillsIcons/Front-End/icons8-html.svg',
+  //     icon: '',
   //     name: 'Game Dev',
   //     card: {
   //       header: {
@@ -155,27 +155,6 @@ export const nodes = (isMobile) => [
       zIndex: -50,
     },
   },
-  {
-    id: 'annotation-1',
-    type: 'annotation',
-    draggable: false,
-    selectable: false,
-    data: {
-      // level: 1,
-      label: 'Olá',
-      // arrowStyle: {
-      //   right: 0,
-      //   bottom: 0,
-      //   transform: 'translate(-30px,10px) rotate(-80deg)',
-      // },
-    },
-    style: {
-      backgroundColor: 'transparent',
-      border: 'none',
-    },
-    className: "mobile-only",
-    position: { x: 50, y: 50 },
-  },
   // {
   //   id: 'annotation-1',
   //   type: 'annotation',
@@ -194,6 +173,7 @@ export const nodes = (isMobile) => [
   //     backgroundColor: 'transparent',
   //     border: 'none',
   //   },
+  //   className: "mobile-only",
   //   position: { x: 50, y: 50 },
   // },
   {
@@ -255,7 +235,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/icons8-html.svg',
+      icon: '/SkillsIcons/Web/Front-End/Structure/icons8-html.svg',
       name: 'HTML',
       card: {
         header: {
@@ -263,8 +243,7 @@ export const nodes = (isMobile) => [
           description: "HyperText Markup Language"
         },
         content: {
-          text: ""
-          // "HTML é a sigla para HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto. É a linguagem padrão para criar páginas da web e é considerada o componente base da internet."
+          text: "HTML é a sigla para HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto. É a linguagem padrão para criar páginas da web e é considerada o componente base da internet. Define o significado e a estrutura do conteúdo da web."
         },
         footer: {
           progress: null,
@@ -280,7 +259,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/frameworks/icons8-react-96.png',
+      icon: '/SkillsIcons/Web/Front-End/Structure/frameworks/icons8-react-96.png',
       name: 'react',
       card: {
         header: {
@@ -288,7 +267,7 @@ export const nodes = (isMobile) => [
           description: "The library for web and native user interfaces"
         },
         content: {
-          text: ""
+          text: "Uma biblioteca JavaScript que facilita a criação de interfaces de usuário interativas para sites e aplicativos. Em termos simples, React ajuda a atualizar partes da página automaticamente, proporcionando uma experiência mais fluida para o usuário."
         },
         footer: {
           progress: null,
@@ -304,15 +283,15 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/frameworks/icons8-nextjs.svg',
+      icon: '/SkillsIcons/Web/Front-End/Structure/frameworks/icons8-nextjs.svg',
       name: 'nextjs',
       card: {
         header: {
           title: "NextJS",
-          description: ""
+          description: "The React Framework for the Web"
         },
         content: {
-          text: ""
+          text: "Usado por algumas das maiores empresas do mundo, o Next.js permite a criação de aplicativos web de alta qualidade com o poder dos componentes React."
         },
         footer: {
           progress: null,
@@ -328,19 +307,19 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/frameworks/angular-icon.svg',
+      icon: '/SkillsIcons/Web/Front-End/Structure/frameworks/angular-icon.svg',
       name: 'angular',
       card: {
         header: {
           title: "Angular",
-          description: ""
+          description: "Build for everyone"
         },
         content: {
-          text: ""
+          text: "Mantido por uma equipe dedicada no Google, o Angular fornece um amplo conjunto de ferramentas, APIs e bibliotecas para simplificar e agilizar o fluxo de trabalho no desenvolvimento. O Angular oferece uma plataforma sólida para você construir aplicativos rápidos e confiáveis​ ​que escalam com o tamanho da equipe e com o tamanho de sua base de código."
         },
         footer: {
-          progress: null,
-          Link: "https"
+          progress: 15,
+          Link: "https://angular.dev/overview"
         }
       }
     },
@@ -355,15 +334,15 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/icons8-css.svg',
+      icon: '/SkillsIcons/Web/Front-End/Design/icons8-css.svg',
       name: 'CSS',
       card: {
         header: {
           title: "CSS",
-          description: "..."
+          description: "Cascading Style Sheets"
         },
         content: {
-          text: "Lorem ipsum"
+          text: "CSS é a sigla para Cascading Style Sheets, que significa Folha de Estilo em Cascata. É uma linguagem de programação que define a aparência de páginas da web. O CSS é usado para controlar aspectos como cores, fontes, espaçamento, layout e imagens."
         },
         footer: {
           progress: null,
@@ -379,7 +358,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/icons8-sass-96.png',
+      icon: '/SkillsIcons/Web/Front-End/Design/icons8-sass-96.png',
       name: 'sass',
       card: {
         header: {
@@ -387,7 +366,7 @@ export const nodes = (isMobile) => [
           description: "Syntactically Awesome StyleSheets"
         },
         content: {
-          text: "CSS com super poderes ou SCSS"
+          text: "CSS com super poderes ou SCSS é uma extensão do CSS que torna a criação de estilos para páginas web mais simples e organizada. O SASS permite o uso de variáveis e funções para escrever códigos de forma mais rápida e manter um design consistente."
         },
         footer: {
           progress: null,
@@ -395,7 +374,7 @@ export const nodes = (isMobile) => [
         }
       }
     },
-    position: { x: -500, y: 375 }
+    position: { x: -500, y: 125 }
   },
   {
     id: 'W.D.1.2',
@@ -403,15 +382,15 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/icons8-tailwindcss.svg',
+      icon: '/SkillsIcons/Web/Front-End/Design/icons8-tailwindcss.svg',
       name: 'tcss',
       card: {
         header: {
           title: "TailwindCSS",
-          description: ""
+          description: "Built for the modern web"
         },
         content: {
-          text: "Rapidly build modern websites without ever leaving your HTML."
+          text: "Sites modernos sem nunca sair do HTML. Uma estrutura CSS de utilidade em primeiro lugar, repleta de classes que podem ser compostas para criar qualquer design, diretamente na sua marcação. O Tailwind é assumidamente moderno e aproveita todos os recursos CSS mais recentes e melhores para tornar a experiência do desenvolvedor a mais agradável possível."
         },
         footer: {
           progress: null,
@@ -419,7 +398,7 @@ export const nodes = (isMobile) => [
         }
       }
     },
-    position: { x: -625, y: 375 }
+    position: { x: -625, y: 125 }
   },
   {
     id: 'W.D.2',
@@ -427,7 +406,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/uiLibrary/shadcnui.svg',
+      icon: '/SkillsIcons/Web/Front-End/Design/uiLibrary/shadcnui.svg',
       name: 'shadcnui',
       card: {
         header: {
@@ -435,7 +414,7 @@ export const nodes = (isMobile) => [
           description: "Build your component library"
         },
         content: {
-          text: "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code."
+          text: "Um conjunto de componentes acessíveis e lindamente projetados e uma plataforma de distribuição de código. Funciona com seus frameworks favoritos. Open Source. Código Aberto."
         },
         footer: {
           progress: null,
@@ -451,15 +430,15 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/uiLibrary/radixui.svg',
+      icon: '/SkillsIcons/Web/Front-End/Design/uiLibrary/radixui.svg',
       name: 'radixui',
       card: {
         header: {
           title: "Radix/UI",
-          description: "Made by WorkOS"
+          description: "Start building your app now"
         },
         content: {
-          text: "An open source component library optimized for fast development, easy maintenance, and accessibility. Just import and go—no configuration required."
+          text: "Uma biblioteca de componentes de código aberto otimizada para desenvolvimento rápido, fácil manutenção e acessibilidade. Basta importar e pronto — sem necessidade de configuração."
         },
         footer: {
           progress: null,
@@ -478,15 +457,15 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/icons8-javascript.svg',
+      icon: '/SkillsIcons/Web/Front-End/Programming/icons8-javascript.svg',
       name: 'JS',
       card: {
         header: {
           title: "JavaScript",
-          description: "..."
+          description: "JS"
         },
         content: {
-          text: "W.P.1"
+          text: "JavaScript é uma linguagem de programação que permite adicionar interatividade a páginas da web. É uma das linguagens mais populares do mundo e é usada para criar sites, aplicativos, jogos e muito mais."
         },
         footer: {
           progress: null,
@@ -497,20 +476,44 @@ export const nodes = (isMobile) => [
     position: { x: -500, y: 500 }
   },
   {
+    id: 'W.P.1.2',
+    type: 'avatar',
+    selectable: true,
+    data: {
+      id: '0',
+      icon: '/SkillsIcons/Web/Front-End/Programming/icons8-typescript.svg',
+      name: 'TS',
+      card: {
+        header: {
+          title: "TypeScript",
+          description: "TS"
+        },
+        content: {
+          text: "TypeScript é JavaScript com sintaxe para tipos. TypeScript é uma linguagem de programação fortemente tipada que se baseia em JavaScript, dando as melhores ferramentas em qualquer escala."
+        },
+        footer: {
+          progress: null,
+          Link: "https"
+        }
+      }
+    },
+    position: { x: -500, y: 375 }
+  },
+  {
     id: 'W.P.2',
     type: 'avatar',
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/icons8-typescript.svg',
-      name: 'TS',
+      icon: '/SkillsIcons/Web/Front-End/Programming/icons8-nodejs.svg',
+      name: 'NodeJS',
       card: {
         header: {
-          title: "TypeScript",
-          description: "..."
+          title: "Node.js",
+          description: "Executar a JavaScript em Toda Parte"
         },
         content: {
-          text: "W.P.1.1"
+          text: "Node.js é uma ambiente de execução de JavaScript disponível para várias plataformas, de código aberto e gratuita, que permite os programadores criar servidores, aplicações da Web, ferramentas de linha de comando e programas de automação de tarefas."
         },
         footer: {
           progress: null,
@@ -520,73 +523,78 @@ export const nodes = (isMobile) => [
     },
     position: { x: -750, y: 500 }
   },
-  // {
-  //   id: 'W.P.3',
-  //   type: 'avatar',
-  //   selectable: true,
-  //   data: {
-  //     id: '0',
-  //     icon: '/SkillsIcons/Web/Front-End/icons8-typescript.svg',
-  //     name: 'TS',
-  //     card: {
-  //       header: {
-  //         title: "NPM",
-  //         description: "..."
-  //       },
-  //       content: {
-  //         text: ""
-  //       },
-  //       footer: {
-  //         progress: null,
-  //         Link: "https"
-  //       }
-  //     }
-  //   },
-  //   position: { x: -1500, y: 500 }
-  // },
-  // {
-  //   id: 'W.S.1.1',
-  //   type: 'avatar',
-  //   selectable: true,
-  //   data: {
-  //     id: '0',
-  //     icon: '/SkillsIcons/Web/Front-End/icons8-javascript.svg',
-  //     name: 'JSX/TSX',
-  //     card: {
-  //       header: {
-  //         title: "JavaScript",
-  //         description: "..."
-  //       },
-  //       content: {
-  //         text: "W.S.1.1"
-  //       },
-  //       footer: {
-  //         progress: null,
-  //         Link: "https"
-  //       }
-  //     }
-  //   },
-  //   position: { x: -625, y: 125 }
-  // },
-  //----------------------------------------------------------------------------------------------------//
-  // {
-  //   id: 'FakeEdge-1',
-  //   type: 'group',
-  //   position: {
-  //     x: -1000,
-  //     y: 34,
-  //   },
-  //   style: {
-  //     width: 1000,
-  //     height: 0,
-  //     zIndex: -50,
-  //     // borderColor: 'yellow',
-  //     borderTopColor: 'white',
-  //     backgroundColor: 'transparent',
-  //     padding: 'none',
-  //     margin: 'nond',
-  //   },
-  // },
+  {
+    id: 'W.P.2.1',
+    type: 'avatar',
+    selectable: true,
+    data: {
+      id: '0',
+      icon: '/SkillsIcons/Web/Front-End/Programming/icons8-npm.svg',
+      name: 'NPM',
+      card: {
+        header: {
+          title: "NPM",
+          description: "Build amazing things"
+        },
+        content: {
+          text: "NPM significa Node Package Manager (Gerenciador de Pacotes Node). É uma biblioteca e registro para pacotes de software JavaScript. npm também tem ferramentas de linha de comando para ajudar a instalação de diferentes pacotes e gerenciar suas dependências."
+        },
+        footer: {
+          progress: null,
+          Link: "https"
+        }
+      }
+    },
+    position: { x: -625, y: 375 }
+  },
+  {
+    id: 'W.P.2.2',
+    type: 'avatar',
+    selectable: true,
+    data: {
+      id: '0',
+      icon: '/SkillsIcons/Web/Front-End/Programming/icons8-webpack.svg',
+      name: 'webpack',
+      card: {
+        header: {
+          title: "WebPack",
+          description: "Bundle your assets"
+        },
+        content: {
+          text: "Em sua essência, o webpack é um empacotador de módulos estáticos para aplicativos JavaScript modernos. Quando o webpack processa seu aplicativo, ele cria internamente um gráfico de dependências de um ou mais pontos de entrada e, em seguida, combina todos os módulos que seu projeto precisa em um ou mais pacotes, que são ativos estáticos para servir seu conteúdo."
+        },
+        footer: {
+          progress: null,
+          Link: "https"
+        }
+      }
+    },
+    position: { x: -875, y: 375 }
+  },
+  {
+    id: 'W.P.3',
+    type: 'avatar',
+    selectable: true,
+    data: {
+      id: '0',
+      icon: '/SkillsIcons/Web/Front-End/Programming/icons8-git.svg',
+      name: 'git',
+      card: {
+        header: {
+          title: "Git",
+          description: "--fast-version-control"
+        },
+        content: {
+          text: "Git é um sistema de controle de versão distribuído, gratuito e de código aberto, projetado para lidar com tudo, desde projetos pequenos até muito grandes, com rapidez e eficiência."
+        },
+        footer: {
+          progress: null,
+          Link: "https"
+        }
+      }
+    },
+    position: { x: -1000, y: 500 }
+  },
   //----------------------------------------------------------------------------------------------------//
 ];
 
@@ -650,8 +658,8 @@ export const edges = [
     id: 'W.D.1-W.D.1.1',
     source: 'W.D.1',
     target: 'W.D.1.1',
-    sourceHandle: 'S',
-    targetHandle: 'N'
+    sourceHandle: 'N',
+    targetHandle: 'S'
   },
   {
     id: 'W.D.1-W.D.1.2',
@@ -659,7 +667,7 @@ export const edges = [
     target: 'W.D.1.2',
     type: 'smoothstep',
     sourceHandle: 'S',
-    targetHandle: 'N'
+    targetHandle: 'E'
   },
   {
     id: 'W.D.1-W.D.2',
@@ -686,66 +694,39 @@ export const edges = [
     targetHandle: 'E'
   },
   {
+    id: 'W.P.1-W.P.1.2',
+    source: 'W.P.1',
+    target: 'W.P.1.2',
+    sourceHandle: 'N',
+    targetHandle: 'S'
+  },
+  {
     id: 'W.P.1-W.P.2',
     source: 'W.P.1',
     target: 'W.P.2',
     sourceHandle: 'W',
     targetHandle: 'E'
   },
-  // {
-  //   id: 'W.P.2-W.P.3',
-  //   source: 'W.P.2',
-  //   target: 'W.P.3',
-  //   sourceHandle: 'W',
-  //   targetHandle: 'E'
-  // },
+  {
+    id: 'W.P.2-W.P.2.1',
+    source: 'W.P.2',
+    target: 'W.P.2.1',
+    sourceHandle: 'NE',
+    targetHandle: 'SW'
+  },
+  {
+    id: 'W.P.2-W.P.2.2',
+    source: 'W.P.2',
+    target: 'W.P.2.2',
+    sourceHandle: 'NW',
+    targetHandle: 'SE'
+  },
+  {
+    id: 'W.P.2-W.P.3',
+    source: 'W.P.2',
+    target: 'W.P.3',
+    sourceHandle: 'W',
+    targetHandle: 'E'
+  },
   //----------------------------------------------------------------------------------------------------//
-  // {
-  //   id: 'e1-2',
-  //   source: '1-1',
-  //   target: '1-2',
-  //   label: 'edge',
-  //   type: 'smoothstep',
-  // },
-  // {
-  //   id: 'e1-3',
-  //   source: '1-1',
-  //   target: '1-3',
-  //   animated: true,
-  //   label: 'animated edge',
-  // },
-  // {
-  //   id: 'e2-2',
-  //   source: '1-2',
-  //   target: '2-2',
-  //   type: 'smoothstep',
-  //   markerEnd: {
-  //     type: MarkerType.ArrowClosed,
-  //   },
-  // },
-  // {
-  //   id: 'e2-3',
-  //   source: '2-2',
-  //   target: '2-3',
-  //   type: 'smoothstep',
-  //   markerEnd: {
-  //     type: MarkerType.ArrowClosed,
-  //   },
-  // },
-  // {
-  //   id: 'e3-3',
-  //   source: '2-3',
-  //   sourceHandle: 'a',
-  //   target: '3-2',
-  //   type: 'button',
-  //   animated: true,
-  //   style: { stroke: 'rgb(158, 118, 255)' },
-  // },
-  // {
-  //   id: 'e3-4',
-  //   source: '2-3',
-  //   sourceHandle: 'b',
-  //   target: '3-1',
-  //   type: 'button',
-  // },
 ];

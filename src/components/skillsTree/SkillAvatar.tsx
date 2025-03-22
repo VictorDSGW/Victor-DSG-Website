@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 "use client"
 import { memo } from "react";
 import useMobileView from "@/components/hooks/useMobileView";
@@ -41,8 +42,10 @@ const SkillAvatar: React.FC<SkillAvatarProps> = ({id, icon, name, card}) => {
                         <AvatarFallback>{typeof name === 'string' && name.length > 0 ? name[0] : 'N/A'}</AvatarFallback>
                     </Avatar>
                 </PopoverTrigger>
-                <PopoverContent>
-                    <Card>
+                <PopoverContent side="right">
+                    <Card
+                        className="leading-5"
+                    >
                         <CardHeader>
                             <CardTitle>{card?.header?.title}</CardTitle>
                             <CardDescription>{card?.header?.description}</CardDescription>
