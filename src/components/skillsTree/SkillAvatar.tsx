@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-duplicate-props */
 "use client"
 import { memo } from "react";
 import useMobileView from "@/components/hooks/useMobileView";

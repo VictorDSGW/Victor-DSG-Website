@@ -32,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br" className={jura.className} suppressHydrationWarning>
-      <body className="">
+      <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <main>{children}</main>
           <Toaster position="bottom-right" />

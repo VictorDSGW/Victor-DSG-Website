@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { achievementsData } from "@/data/Achievements/achievementsData";
 import { cn } from "@/lib/utils"
 import { Progress } from "@/components/ui/progress"
@@ -13,6 +12,7 @@ import {
 } from "@/components/ui/card"
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { GiAchievement } from "react-icons/gi";
+import Image from "next/image";
 
 type CardProps = React.ComponentProps<typeof Card>
 
@@ -45,7 +45,7 @@ export const Achievements = ({ className, ...props }: CardProps) => {
                 >{achievement.course}</h3>
                 {achievement.content?.img && (
                   <>
-                    <img src={achievement.content.img} alt={achievement.content.imgText} />
+                    <Image src={achievement.content.img} alt={"img"} />
                     <p>{achievement.content.text}</p>
                   </>
                 )}
