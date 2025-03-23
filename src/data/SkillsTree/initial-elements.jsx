@@ -24,7 +24,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/icons8-developer.png',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/icons8-developer.png',
       name: 'VDSG',
       card: {
         header: {
@@ -49,7 +49,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/icons8-web-96.png',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/icons8-web-96.png',
       name: 'Web Developer',
       card: {
         header: {
@@ -73,7 +73,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Software/icons8-caixa-de-software-96.png',
+      icon: '/Victor-DSG-Website/SkillsIcons/Software/icons8-caixa-de-software-96.png',
       name: 'Software Engineer',
       card: {
         header: {
@@ -236,7 +236,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/Structure/icons8-html.svg',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/Front-End/Structure/icons8-html.svg',
       name: 'HTML',
       card: {
         header: {
@@ -260,7 +260,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/Structure/frameworks/icons8-react-96.png',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/Front-End/Structure/frameworks/icons8-react-96.png',
       name: 'react',
       card: {
         header: {
@@ -284,7 +284,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/Structure/frameworks/icons8-nextjs.svg',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/Front-End/Structure/frameworks/icons8-nextjs.svg',
       name: 'nextjs',
       card: {
         header: {
@@ -308,7 +308,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/Structure/frameworks/angular-icon.svg',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/Front-End/Structure/frameworks/angular-icon.svg',
       name: 'angular',
       card: {
         header: {
@@ -335,7 +335,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/Design/icons8-css.svg',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/Front-End/Design/icons8-css.svg',
       name: 'CSS',
       card: {
         header: {
@@ -359,7 +359,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/Design/icons8-sass-96.png',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/Front-End/Design/icons8-sass-96.png',
       name: 'sass',
       card: {
         header: {
@@ -383,7 +383,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/Design/icons8-tailwindcss.svg',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/Front-End/Design/icons8-tailwindcss.svg',
       name: 'tcss',
       card: {
         header: {
@@ -407,7 +407,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/Design/uiLibrary/shadcnui.svg',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/Front-End/Design/uiLibrary/shadcnui.svg',
       name: 'shadcnui',
       card: {
         header: {
@@ -431,7 +431,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/Design/uiLibrary/radixui.svg',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/Front-End/Design/uiLibrary/radixui.svg',
       name: 'radixui',
       card: {
         header: {
@@ -458,7 +458,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/Programming/icons8-javascript.svg',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/Front-End/Programming/icons8-javascript.svg',
       name: 'JS',
       card: {
         header: {
@@ -482,7 +482,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/Programming/icons8-typescript.svg',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/Front-End/Programming/icons8-typescript.svg',
       name: 'TS',
       card: {
         header: {
@@ -506,7 +506,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/Programming/icons8-nodejs.svg',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/Front-End/Programming/icons8-nodejs.svg',
       name: 'NodeJS',
       card: {
         header: {
@@ -530,7 +530,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/Programming/icons8-npm.svg',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/Front-End/Programming/icons8-npm.svg',
       name: 'NPM',
       card: {
         header: {
@@ -554,7 +554,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/Programming/icons8-webpack.svg',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/Front-End/Programming/icons8-webpack.svg',
       name: 'webpack',
       card: {
         header: {
@@ -578,7 +578,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/Programming/icons8-git.svg',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/Front-End/Programming/icons8-git.svg',
       name: 'git',
       card: {
         header: {

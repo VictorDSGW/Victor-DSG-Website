@@ -7,10 +7,10 @@ html {
   /* scroll-snap-type: y mandatory; */
 }
 
-/* body {
+body {
   font-family: "Jura", Arial, Helvetica, sans-serif;
-  background-color: black;
-} */
+  /* background-color: black; */
+}
 
 @layer base {
   body {

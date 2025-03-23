@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import {
-  // Courier_Prime,
+  Courier_Prime,
   Jura
 } from 'next/font/google'
 import "@/app/globals.css";
@@ -13,11 +13,11 @@ const jura = Jura({
   variable: '--font-jura'
 })
 
-// const typeWriter = Courier_Prime({
-//   subsets: ['latin'],
-//   weight: ["400", "700"],
-//   variable: '--font-typeWriter'
-// })
+const typeWriter = Courier_Prime({
+  subsets: ['latin'],
+  weight: ["400", "700"],
+  variable: '--font-typeWriter'
+})
 
 
 export const metadata: Metadata = {
@@ -31,7 +31,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br" className={jura.className} suppressHydrationWarning>
+    <html lang="pt-br" className={`${jura.className} ${typeWriter.className}`} suppressHydrationWarning>
+      <head>
+        <link rel="shortcut icon" href="/Victor-DSG-Website/favicon.ico" type="image/x-icon" />
+      </head>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <main>{children}</main>

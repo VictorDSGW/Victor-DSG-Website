@@ -17,8 +17,6 @@ const formSchema = z.object({
 });
 
 export default function ContactForm() {
-  // const promise = () => new Promise((resolve) => setTimeout(() => resolve({ name: 'Sonner' }), 2000));
-
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -48,13 +46,13 @@ export default function ContactForm() {
   }
 
   return (
-    <Card className="font-(family-name:--font-typeWriter) w-72 sm:w-96 xl:w-1/3">
+    <Card className="font-[var(--font-typeWriter)] w-72 sm:w-96 xl:w-1/3">
       <CardHeader className="text-center text-xl xl:text-2xl 2xl:text-3xl">
         <h2>CONTATO</h2>
       </CardHeader>
       <CardContent>
         <Form {...form}>
-          <form action="https://formspree.io/f/mkgjrazr" method='post' onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+          <form action="https://formspree.io/f/mkgjrazr" method='post' onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 font-[var(--font-typeWriter)]">
             <FormField
                 control={form.control}
                 name="name"
@@ -62,7 +60,7 @@ export default function ContactForm() {
                     <FormItem>
                     <FormLabel>Nome:</FormLabel>
                     <FormControl>
-                        <Input placeholder="Seu nome" {...field} />
+                        <Input className='font-[var(--font-typeWriter)]' placeholder="Seu nome" {...field} />
                     </FormControl>
                     </FormItem>
                 )}
