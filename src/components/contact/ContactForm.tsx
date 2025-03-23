@@ -33,7 +33,7 @@ export default function ContactForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
     try {
-      const { data } = await axios.post('/api/send-email', values);
+      const { data } = await axios.post('https://formspree.io/f/mkgjrazr', values);
       toast.success(data.message);
       form.reset();
     } catch (error) {
@@ -54,7 +54,7 @@ export default function ContactForm() {
       </CardHeader>
       <CardContent>
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+          <form action="https://formspree.io/f/mkgjrazr" method='post' onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
             <FormField
                 control={form.control}
                 name="name"

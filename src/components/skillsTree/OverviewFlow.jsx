@@ -61,14 +61,13 @@ const OverviewFlow = () => {
             zoomOnDoubleClick={false}
             preventScrolling={false}
             panOnDrag={false}
-            className={`transform transition-transform duration-100 ${
+            className={`transform transition-transform duration-0 ${
               shouldRotate ? "origin-bottom -rotate-90" : "rotate-0"
             }`}
             style={ isMobile ? {
               transform: 'translate(-430px, -250px)',
             } : {}}
-          >
-          </ReactFlow>
+          />
         </div>
       </ReactFlowProvider>
   );

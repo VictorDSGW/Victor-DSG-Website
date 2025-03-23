@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import { MarkerType } from '@xyflow/react';
 import { type } from 'os';
