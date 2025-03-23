@@ -6,7 +6,6 @@ import MobileMenu from "@/components/navgation/MobileMenu";
 import { useState } from "react";
 import Hamburger from "hamburger-react";
 import { ThemeToggle } from "@/components/navgation/ThemeToggle";
-// import { useSelectedLayoutSegment } from "next/navigation";
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -14,8 +13,6 @@ export default function Header() {
     const sectionIds = ["contact"];
     // const activeSection = useScrollSpy(sectionIds);
     const { activeSection, scrollToSection } = useScrollSpy(sectionIds);
-
-    // const pathname = usePathname();
 
     return (
         <header className="fixed top-0 left-0 w-screen md:h-[var(--navbar-height)] flex flex-row bg-[hsl(var(--tertiary))] pl-1 pr-3 py-3 z-50 xl:py10 2xl:py-16">

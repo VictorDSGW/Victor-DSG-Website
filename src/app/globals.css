@@ -31,7 +31,7 @@ body {
     --primary-foreground: 0 0% 98%;
     --secondary: 45 100% 50%;
     --secondary-foreground: 0 0% 9%;
-    --tertiary: 0 0% 85%;
+    --tertiary: 0 0% 85%; /* 251°, 10%, 32% */
     --tertiary-foreground: 0 0% 100%;
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;

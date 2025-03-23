@@ -28,6 +28,7 @@ interface SkillAvatarProps {
 }
 
 const SkillAvatar: React.FC<SkillAvatarProps> = ({id, icon, name, card}) => {
+    const popoverSide = useMobileView() ? "top" : "right";
     return (
         <div
             id={`${id}`}
@@ -41,7 +42,7 @@ const SkillAvatar: React.FC<SkillAvatarProps> = ({id, icon, name, card}) => {
                         <AvatarFallback>{typeof name === 'string' && name.length > 0 ? name[0] : 'N/A'}</AvatarFallback>
                     </Avatar>
                 </PopoverTrigger>
-                <PopoverContent side="right">
+                <PopoverContent side={popoverSide}>
                     <Card
                         className="leading-5"
                     >
