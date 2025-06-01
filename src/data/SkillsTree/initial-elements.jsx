@@ -83,7 +83,7 @@ export const nodes = (isMobile) => [
           text: "Engenheiro de Software projeta sistemas robustos e escaláveis, transformando desafios em soluções inteligentes. Com foco em qualidade e inovação, contribuo para o desenvolvimento de tecnologias que fazem a diferença. Cursando bacharelado 1º Semestre."
         },
         footer: {
-          progress: 5,
+          progress: 10,
           Link: "https"
         }
       }
@@ -142,6 +142,19 @@ export const nodes = (isMobile) => [
       zIndex: -50,
     },
   },
+  // {
+  //   id: 'test-group',
+  //   type: 'group',
+  //   position: {
+  //     x: -875,
+  //     y: 80,
+  //   },
+  //   style: {
+  //     width: 250,
+  //     height: 125,
+  //     zIndex: -50,
+  //   },
+  // },
   {
     id: 'uiLibrary-group',
     type: 'group',
@@ -201,6 +214,31 @@ export const nodes = (isMobile) => [
     },
     position: { x: -1165, y: -35 },
   },
+  // {
+  //   id: 'testing-annotation',
+  //   type: 'annotation',
+  //   draggable: false,
+  //   selectable: false,
+  //   data: {
+  //     // level: 1,
+  //     label: 'TESTING',
+  //     // arrowStyle: {
+  //     //   right: 0,
+  //     //   bottom: 0,
+  //     //   transform: 'translate(-30px,10px) rotate(-80deg)',
+  //     // },
+  //   },
+  //   style: 
+  //   isMobile ? {
+  //     backgroundColor: 'transparent',
+  //     border: 'none',
+  //     transform: 'rotate(90deg) translate(10px, 890px)',
+  //   } : {
+  //     backgroundColor: 'transparent',
+  //     border: 'none',
+  //   },
+  //   position: { x: -875, y: 50 },
+  // },
   {
     id: 'uiLibraries-annotation',
     type: 'annotation',
@@ -275,7 +313,7 @@ export const nodes = (isMobile) => [
         }
       }
     },
-    position: { x: -1000, y: 0 }
+    position: { x: -1125, y: 0 }
   },
   {
     id: 'W.S.2.1',
@@ -299,7 +337,31 @@ export const nodes = (isMobile) => [
         }
       }
     },
-    position: { x: -1125, y: 125 }
+    position: { x: -1250, y: 125 }
+  },
+  {
+    id: 'W.S.2.2',
+    type: 'avatar',
+    selectable: true,
+    data: {
+      id: '0',
+      icon: '/SkillsIcons/Web/Front-End/Structure/frameworks/icons8-rapidamente.svg',
+      name: 'Vite',
+      card: {
+        header: {
+          title: "Vite",
+          description: "The Build Tool for the Web"
+        },
+        content: {
+          text: "Vite é uma ferramenta de construção de frontend extremamente rápida que impulsiona a próxima geração de aplicativos web."
+        },
+        footer: {
+          progress: null,
+          Link: "https"
+        }
+      }
+    },
+    position: { x: -1000, y: 125 }
   },
   {
     id: 'W.S.3',
@@ -637,6 +699,14 @@ export const edges = [
     type: 'smoothstep',
     sourceHandle: 'S',
     targetHandle: 'E'
+  },
+  {
+    id: 'W.S.2-W.S.2.2',
+    source: 'W.S.2',
+    target: 'W.S.2.2',
+    type: 'smoothstep',
+    sourceHandle: 'S',
+    targetHandle: 'W'
   },
   {
     id: 'W.S.2-W.S.3',
