@@ -24,9 +24,50 @@
             "content": "Este é o meu primeiro projeto de landing page, desenvolvido com HTML, CSS e JavaScript (jQuery). O foco está na criação de uma interface simples e responsiva, aplicando boas práticas de desenvolvimento front-end. Ideal para promover um produto/serviço.",
             "footer": {
                 "github": "https://github.com/VictorDSGW/Landing-Page-1_Patchwork",
+<<<<<<< HEAD
+=======
+                "More": "https://victordsgw.github.io/Landing-Page-1_Patchwork/"
+            }
+        },
+        {
+            "id": 3,
+            "header": {
+                "icon": "",
+                "title": "CineVibe",
+                "description": "Consumo de API"
+            },
+            "content": "Um projeto para praticar integração de APIs, em particular, a integração do banco de dados The Movie Database (TMDb) - um catálogo de filmes e series. O foco está em manter o visual agradável e responsivo, focando numa estruturação organizada e no melhor uso das tecnologias.",
+            "footer": {
+                "github": "https://github.com/VictorDSGW/CineVibe",
+                "More": ""
+            }
+        },
+        {
+            "id": 4,
+            "header": {
+                "icon": "",
+                "title": "Angular-login-page",
+                "description": "Página de login"
+            },
+            "content": "Projeto front end simples de uma página de login, feito no Angular para conhecer o framework e a interface de linha de comando angular, inspirado no projeto do canal da Fernanda Kipper | Dev.",
+            "footer": {
+                "github": "https://github.com/VictorDSGW/Angular-login-page",
+                "More": ""
+            }
+        },
+        {
+            "id": 5,
+            "header": {
+                "icon": "",
+                "title": "Dinamiza",
+                "description": "React"
+            },
+            "content": "Este é um projeto de gerenciamento de tempo e custo de projetos, desenvolvido para praticar React. Inspirado no projeto 'Costs' do canal Hora de Codar, o foco está na criação de uma interface simples para controlar o andamento e os gastos de projetos.",
+            "footer": {
+                "github": "https://github.com/VictorDSGW/Angular-login-page",
+>>>>>>> develop
                 "More": ""
             }
         }
-        
     ]
 }
