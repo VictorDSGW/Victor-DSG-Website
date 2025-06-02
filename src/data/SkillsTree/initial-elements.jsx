@@ -346,7 +346,7 @@ export const nodes = (isMobile) => [
     selectable: true,
     data: {
       id: '0',
-      icon: '/SkillsIcons/Web/Front-End/Structure/frameworks/icons8-rapidamente.svg',
+      icon: '/Victor-DSG-Website/SkillsIcons/Web/Front-End/Structure/frameworks/icons8-rapidamente.svg',
       name: 'Vite',
       card: {
         header: {
